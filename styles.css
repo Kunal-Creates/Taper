@@ -1,0 +1,217 @@
+:root {
+    --brand-color: 30 58 138;
+    /* A nice navy blue */
+    --background-light: 243 244 246;
+    /* Tailwind's gray-100 */
+    --text-light: 17 24 39;
+    /* Tailwind's gray-900 */
+    --background-dark: 17 24 39;
+    /* Tailwind's gray-900 */
+    --text-dark: 243 244 246;
+    /* Tailwind's gray-100 */
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: rgb(var(--background-light));
+    color: rgb(var(--text-light));
+}
+
+.dark body {
+    background-color: rgb(var(--background-dark));
+    color: rgb(var(--text-dark));
+}
+
+.brand-glow {
+    box-shadow: 0 0 15px 1px rgba(var(--brand-color), 0.5);
+}
+
+.dark .brand-glow {
+    box-shadow: 0 0 15px 1px rgba(var(--brand-color), 0.7);
+}
+
+/* Custom scrollbar for webkit browsers */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.3);
+    border-radius: 10px;
+    border: 3px solid transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+/* Hide scrollbar for Firefox */
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(128, 128, 128, 0.3) transparent;
+}
+
+textarea:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#renderer-container canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* New Loader Animation Styles */
+.loader-icon svg {
+    width: 2.5rem;
+    /* 40px */
+    height: 2.5rem;
+    /* 40px */
+    color: rgb(var(--brand-color));
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        opacity: 0.4;
+    }
+
+    50% {
+        transform: translateY(-20px);
+        opacity: 1;
+    }
+}
+
+.animate-float {
+    animation: float 2s ease-in-out infinite;
+}
+
+/* Theme Toggle Button Styles */
+.theme-toggle-btn {
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.theme-toggle-btn:hover {
+    transform: translateY(-1px);
+}
+
+.theme-toggle-btn.active {
+    transform: translateY(0);
+}
+
+/* Enhanced button focus states */
+.theme-toggle-btn:focus {
+    outline: 2px solid rgb(59 130 246);
+    outline-offset: 2px;
+}
+
+/* Smooth theme transition for all elements */
+* {
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Ensure 3D renderer background transitions smoothly */
+#renderer-container {
+    transition: background-color 0.3s ease;
+}
+
+/* Chat history styles */
+.chat-item {
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.chat-item:hover .chat-actions {
+    opacity: 1;
+    visibility: visible;
+}
+
+.chat-actions {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+}
+
+.chat-item.active {
+    background: rgba(245, 158, 11, 0.1);
+    border-left: 3px solid rgb(245, 158, 11);
+}
+
+/* Enhanced sidebar hover effects */
+#sidebar .group:hover {
+    background-color: rgb(243 244 246);
+}
+
+.dark #sidebar .group:hover {
+    background-color: rgb(31 41 55);
+}
+
+/* New Chat button styling */
+#new-chat-btn {
+    font-weight: 500;
+}
+
+/* Chat name styling */
+#chat-history-container .group span {
+    font-weight: 500;
+}
+
+/* Modal backdrop blur effect */
+.modal-backdrop {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* Button hover effects */
+.rename-chat-btn:hover,
+.delete-chat-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Focus states for accessibility */
+.rename-chat-btn:focus,
+.delete-chat-btn:focus {
+    outline: 2px solid rgb(59 130 246);
+    outline-offset: 2px;
+}
+
+/* Smooth animations for modals */
+.modal-enter {
+    animation: modalEnter 0.3s ease-out;
+}
+
+.modal-exit {
+    animation: modalExit 0.3s ease-in;
+}
+
+@keyframes modalEnter {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes modalExit {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}

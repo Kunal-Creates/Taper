@@ -1,0 +1,40 @@
+{
+  "name": "tape-3d-generator",
+  "version": "1.0.0",
+  "description": "AI-powered 3D object generator using Three.js and Gemini API",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "python server.py",
+    "install-python": "pip install -r requirements.txt"
+  },
+  "keywords": [
+    "threejs",
+    "3d",
+    "ai",
+    "gemini",
+    "webgl",
+    "javascript"
+  ],
+  "author": "Tape Team",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "three": "^0.164.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/tape-3d-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/tape-3d-generator/issues"
+  },
+  "homepage": "https://github.com/your-username/tape-3d-generator#readme"
+}
