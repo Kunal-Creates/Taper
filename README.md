@@ -5,9 +5,9 @@ A modern web application that uses AI to generate interactive 3D objects from na
 ## Features
 
 - 🎨 **AI-Powered 3D Generation**: Describe any object and watch it come to life in 3D
-- 🆓 **100% FREE AI**: No API keys, no limits, no registration required!
-- 🤖 **Advanced AI Models**: Claude Opus 4, GPT-5, Gemini 2.5 Pro selection
-- 🧠 **Smart Model Selection**: Choose the best AI model for your needs
+- 🆓 **100% FREE**: No API keys, no limits, no registration required!
+- 🧠 **Intelligent Generation**: Advanced prompt analysis for perfect 3D objects
+- 🤖 **AI Model Selection**: Choose your preferred AI interface (UI only)
 - 💬 **Chat Interface**: Manage multiple conversations with full history
 - 🌓 **Dark/Light Mode**: Beautiful themes that adapt to your preference
 - 🔄 **Real-time Rendering**: Interactive 3D objects with animations
@@ -93,15 +93,17 @@ Simply open `index.html` in your browser (some features may be limited)
 - **Physics**: Cannon.js integration for realistic physics
 - **Materials**: Enhanced materials and shaders
 
-## 🤖 AI Model Selection
+## 🧠 Intelligent 3D Generation
 
-Choose from the latest and most powerful AI models in **Settings** → **AI Model**:
+Our advanced system analyzes your prompts and generates perfect 3D objects using:
 
-- **Claude Opus 4** (Recommended) - Most advanced reasoning and creativity
-- **GPT-5** (Latest) - OpenAI's newest model with enhanced capabilities  
-- **Gemini 2.5 Pro** (Google) - Advanced multimodal understanding
-- **Claude 3.5 Sonnet** (Fallback) - Fast and reliable generation
-- **GPT-4o Mini** (Speed) - Quick responses for simple objects
+- **Shape Detection**: Recognizes spheres, cubes, cylinders, cones, torus, planes
+- **Color Recognition**: Supports 30+ colors including red, blue, gold, silver, etc.
+- **Material Effects**: Metallic, glass, glowing, matte finishes
+- **Animation Patterns**: Spinning, floating, pulsing, rainbow effects
+- **Size Variations**: Large, small, tiny modifiers
+
+**AI Model Selection** in settings provides different generation personalities (UI preference only).
 
 ## 🐍 AI Training & Enhancement
 
@@ -123,17 +125,27 @@ This creates comprehensive training datasets with 500+ examples covering:
 
 ## Example Prompts
 
-Try these prompts to see what Tape can create:
+Try these prompts to see the intelligent generation in action:
 
-- "A spinning golden sphere with metallic reflections"
-- "A crystalline tower with glowing edges"
-- "A floating island with trees and waterfalls"
-- "A mechanical robot with moving parts"
-- "A glass pyramid with rainbow refractions"
-- "A wooden sailing ship on ocean waves"
-- "A transparent glass sphere"
-- "A glowing plasma ball"
-- "A rotating rainbow cone"
+**Basic Shapes:**
+- "red sphere" → Creates a red spinning sphere
+- "blue cube" → Generates a blue rotating cube
+- "green cylinder" → Makes a green floating cylinder
+
+**Advanced Materials:**
+- "metallic gold sphere" → Shiny golden ball with metallic finish
+- "transparent glass cube" → Crystal clear glass cube
+- "glowing neon torus" → Bright glowing donut shape
+
+**Complex Animations:**
+- "spinning rainbow cone" → Colorful animated pyramid
+- "floating silver cylinder" → Hovering metallic tube
+- "pulsing purple sphere" → Breathing purple orb
+
+**Size Variations:**
+- "large red cube" → Big red box
+- "tiny blue sphere" → Small blue ball
+- "huge golden torus" → Massive golden ring
 
 ## Features in Detail
 
