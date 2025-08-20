@@ -215,15 +215,6 @@ If you encounter issues:
 3. Check browser console for error messages
 4. Verify environment variables are loaded correctly
 
-## Roadmap
-
-- [ ] Advanced physics simulation
-- [ ] Model export functionality
-- [ ] Collaborative editing
-- [ ] VR/AR support
-- [ ] Advanced material editor
-- [ ] Animation timeline
-- [ ] Cloud storage integration
 
 ---
 
